@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rosh</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+
+    	<!-- Logo -->
+    	<%= render :partial => "colleges/logo" %>
+     
+    </div>
+    
+       <!-- Menu -->
+       <%= render :partial => "colleges/menu" %>
+    
+       <!-- Grow Ideas -->
+       <%#= render :partial => "colleges/idea" %>
+    
+    <div class="clear"></div>
+    </div>
+    
+    <div class="center_content">
+    	<div class="left_content">
+        	<%= yield %>
+        </div>
+    
+    	<!-- Testimonials -->
+        
+        <div class="clear"></div>   
+    </div>
+    
+    <!--footer -->
+    <%= render :partial => "colleges/footer" %>
+
+</div>
+</body>
+</html>
